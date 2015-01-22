@@ -14,8 +14,7 @@ class HomeScreen < PM::Screen
     end
     append(UIButton, :reg_button_2).on(:tap) do |sender|
       mp "Button was tapped"
-    end.on(:touch_down) do |sender|
-      mp "Button was pressed"
+      open AboutScreen
     end
   end
 
