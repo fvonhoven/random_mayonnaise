@@ -17,4 +17,25 @@ class HomeStylesheet < ApplicationStylesheet
     st.adjusts_font_size = true
     st.text_alignment = :center
   end
+    def reg_button st
+        st.frame = {l: 25, t: 475, w: 150, h: 150}
+        st.corner_radius = 10
+        st.background_color = color.gray
+        st.text = "Send Mayonnaise !!!!!!"
+        st.color = color.black
+        st.font = font.system(18)
+        st.number_of_lines = 2
+        #st.view.setTitle("Impressive!", forState:UIControlStateHighlighted)
+        st.text_highlighted = "Impressive!"# NOT SUPPORTED IN THIS RMQ VERSION!!!!!!!!
+      end
+      def reg_button_2 st
+        st.frame = {l: 200, t: 475, w: 150, h: 150}
+        st.corner_radius = 10
+        st.background_color = color.red
+        st.text = "WTF?!?!"
+        st.color = color.black
+        st.font = font.system(18)
+        #st.view.setTitle("Impressive!", forState:UIControlStateHighlighted)
+        #st.text_highlighted = "Impressive!" NOT SUPPORTED IN THIS RMQ VERSION!!!!!!!!
+      end
 end
