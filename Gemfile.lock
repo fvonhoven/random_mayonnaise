@@ -3,6 +3,8 @@ GEM
   specs:
     ProMotion (2.2.0)
       methadone (~> 1.7)
+    ProMotion-map (0.5.0)
+      ProMotion (~> 2.0)
     activesupport (3.2.21)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
@@ -75,6 +77,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ProMotion-map
   afmotion
   cdq
   rake

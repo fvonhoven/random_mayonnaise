@@ -8,10 +8,9 @@ class HomeScreen < PM::Screen
 
     append(UILabel, :status_label)
     append(UIButton, :reg_button).on(:tap) do |sender|
-      mp "Button was tapped"
-    end.on(:touch_down) do |sender|
-      mp "Button was pressed"
+      open MapScreen
     end
+
     append(UIButton, :reg_button_2).on(:tap) do |sender|
       mp "Button was tapped"
       open AboutScreen
