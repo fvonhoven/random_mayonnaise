@@ -1,8 +1,8 @@
 class MapScreen < PM::MapScreen
   title "My Map"
   start_position latitude: 35.090648651123, longitude: -82.965972900391, radius: 4
-  def on_load
-    #self.type = MKMapTypeSatellite
+  def on_appear
+    self.type = MKMapTypeHybrid #MKMapTypeSatellite
   end
 
   def annotation_data
